@@ -33,7 +33,7 @@ import { useApi } from "@/composables/useApi";
 import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 const router = useRouter();
-const { apiData, loading, apiError } = useApi(
+const { apiData,  apiError } = useApi(
   "https://ecommerce.routemisr.com/api/v1/brands"
 );
 

@@ -40,7 +40,7 @@ const carouselConfig = {
 
 const {
   apiData,
-  loading,
+ 
   apiError
 } = useApi('https://ecommerce.routemisr.com/api/v1/brands')
 

@@ -250,7 +250,6 @@
 <script setup lang="ts">
 import { useCartStore } from "@/stores/cart";
 import { onMounted } from "vue";
-import { useLoading } from "vue-loading-overlay";
 import { useRouter } from "vue-router";
 // import router from '@/router';
 
@@ -258,13 +257,8 @@ const router = useRouter();
 const cartStore = useCartStore();
 onMounted(() => {
   
-  const $loading = useLoading();
-  const loader = $loading.show({
-    loader: "dots", 
-    color: "#4CAF50",
-  });
+  
   cartStore.getUserCartData();
-  loader.hide();
 });
 
 function goToPayment() {

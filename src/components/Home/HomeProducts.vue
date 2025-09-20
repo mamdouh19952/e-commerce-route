@@ -41,25 +41,21 @@ import Product from '@/components/Home/Product.vue';
 import { IProduct } from '@/types/index';
 import axios from 'axios';
 import { computed, onMounted, ref } from 'vue';
-import { useLoading } from 'vue-loading-overlay';
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
-const loading = useLoading({});
 const products = ref<IProduct[]>([]);
 const searchQuery = ref("");
 
 // 🟢 هات المنتجات
 async function getAllProducts() {
-  const loader = loading.show({ color: "#4CAF50" });
+  
   try {
     const res = await axios.get("https://ecommerce.routemisr.com/api/v1/products");
     products.value = res.data.data;
   } catch (err) {
     console.error("Error fetching products:", err);
-  } finally {
-    loader.hide();
-  }
+  } 
 }
 
 // 🟢 فلترة محلية

@@ -16,7 +16,7 @@ import { useRoute } from 'vue-router';
 
 const route = useRoute();
 
-const { apiData, loading, apiError } = useApi(
+const { apiData,  apiError } = useApi(
   `https://ecommerce.routemisr.com/api/v1/brands/${route.params.id}`
 );
 </script>

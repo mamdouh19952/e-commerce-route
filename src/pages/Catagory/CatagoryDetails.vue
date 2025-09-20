@@ -20,7 +20,7 @@ import { useRoute } from 'vue-router';
 
 
 const route=useRoute();
-const{apiData,loading,apiError}=useApi(`https://ecommerce.routemisr.com/api/v1/categories/${route.params.id}`)
+const{apiData,apiError}=useApi(`https://ecommerce.routemisr.com/api/v1/categories/${route.params.id}`)
 </script>
 
 <style lang="scss" scoped>

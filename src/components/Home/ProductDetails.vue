@@ -36,24 +36,16 @@ import Footer from '../Footer.vue';
 import { useRoute } from 'vue-router';
 import { onMounted, ref } from 'vue';
 import { IProduct } from '@/types';
-import { useLoading } from 'vue-loading-overlay';
 import { useCartStore } from '@/stores/cart';
 const currentProduct = ref<IProduct | null>(null);
 const route = useRoute();
-const loading = useLoading({});
 const CartStore = useCartStore();
 function getProductDetails(){
-const loader=loading.show({
-        color: "#4CAF50"    
 
-}
-    
-);
     axios.get(`https://ecommerce.routemisr.com/api/v1/products/${route.params.id}`)
     .then((res)=>{
         console.log(res.data);
         currentProduct.value = res.data.data
-        loader.hide();
     })
     .catch((err)=>{
         console.log(err);

@@ -2,7 +2,6 @@ import { useAuthStore } from "@/stores/auth";
 import axios from "axios";
 import { ref } from "vue";
 import { toast } from "vue3-toastify";
-import  {useLoading}  from 'vue-loading-overlay';
 
 export function useFetchApi() {
   const authStore = useAuthStore();
@@ -31,14 +30,13 @@ export function useFetchApi() {
   }
   async function getApi(link: string, ) 
   {
-          const loader = useLoading().show({ color: "#4CAF50" });
 
     try {
       const res = await axios.get(link, {
   headers: { token: authStore.token }
 
       });
-      loader.hide();  
+     
 
 
 
