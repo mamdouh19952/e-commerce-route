@@ -1,7 +1,11 @@
 <template>
   <Navbar />
 
+<<<<<<< HEAD
   <div class="m-20 w-3/4 mx-auto text-gray-700">
+=======
+  <div class="mt-20 w-3/4 mx-auto text-gray-700">
+>>>>>>> ad185da (Initial commit for new Vue project)
     <Form @submit="getValues" :validation-schema="paymentSchema">
       <h2 class="text-3xl py-4">Pay Now :</h2>
       

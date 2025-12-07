@@ -1,6 +1,11 @@
 <template>
   <div
+<<<<<<< HEAD
     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+=======
+  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-30 mb-12 px-12"
+
+>>>>>>> ad185da (Initial commit for new Vue project)
   >
     <div
       v-for="category in apiData"

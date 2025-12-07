@@ -1,5 +1,9 @@
 <template>
+<<<<<<< HEAD
   <div>
+=======
+  <div class="mb-12">
+>>>>>>> ad185da (Initial commit for new Vue project)
     <!-- العنوان -->
     <div v-if="route.path == '/'"  >
 <div class="w-full text-center my-10">
@@ -11,7 +15,11 @@
     </div>
 
     <!-- مربع البحث -->
+<<<<<<< HEAD
     <div class="w-full max-w-2xl px-4 mx-auto py-4">
+=======
+    <div class="w-full max-w-2xl px-4 mx-auto py-4 ">
+>>>>>>> ad185da (Initial commit for new Vue project)
       <input
         v-model="searchQuery"
         type="text"
@@ -21,7 +29,11 @@
     </div>
 
     <!-- المنتجات -->
+<<<<<<< HEAD
     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-6 mt-6">
+=======
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-6 mt-6 px-12">
+>>>>>>> ad185da (Initial commit for new Vue project)
       <Product
         v-for="item in filteredProducts"
         :key="item._id"

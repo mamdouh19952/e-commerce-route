@@ -41,7 +41,11 @@
     {{ productData?.ratingsAverage }}
   </span>
 </div>
+<<<<<<< HEAD
 <div class="flex items-center gap-2 mt-2">
+=======
+<div class="flex items-center justify-around gap-2 mt-2">
+>>>>>>> ad185da (Initial commit for new Vue project)
 
 <button 
   @click.stop="cartStore.addToCart(productData.id)"

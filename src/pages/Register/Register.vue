@@ -1,13 +1,18 @@
 <template>
             <Navbar />
 
+<<<<<<< HEAD
     <div class="m-20 w-3/4 mx-auto text-gray-700">
+=======
+    <div class="mt-20 w-3/4 mx-auto text-gray-700">
+>>>>>>> ad185da (Initial commit for new Vue project)
 <Form @submit="getValues" :validation-schema="userSchema" >
     <h2 class="text-3xl py-4">Register Now :</h2>
 <p v-if="authStore.apiErrors" class=" bg-red-200 text-center p-2 rounded-md mt-4 text-lg font-semibold text-red-600">
 
 
     {{authStore.fieldError}} <span v-if="authStore.fieldError">:</span> {{ authStore.apiErrors }}</p>
+<<<<<<< HEAD
 <!-- <div class="mt-4">
     <label for="email" class="block mb-2 text-sm font-medium text-gray-400 dark:text-white">email :</label>
         <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="your email" 
@@ -24,6 +29,8 @@
         type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="your name" />
         <ErrorMessage as="div" name="name" class="text-red-500 text-center m-2 bg-red-200 p-2 mt-2" />
 </div> -->
+=======
+>>>>>>> ad185da (Initial commit for new Vue project)
 
     <div v-for="item in fieldsData" :key="item.name">
     <label :for="item.name" class="block mb-2 text-sm font-medium text-gray-400 dark:text-white">
@@ -38,12 +45,18 @@
 
 </Form>    </div>
 
+<<<<<<< HEAD
 <Footer />
+=======
+>>>>>>> ad185da (Initial commit for new Vue project)
 
 </template>
 
 <script setup lang="ts">
+<<<<<<< HEAD
 import Footer from '@/components/Footer.vue';
+=======
+>>>>>>> ad185da (Initial commit for new Vue project)
 import Navbar from '@/components/Navbar.vue';
 import { useAuthStore } from '@/stores/auth';
 import { ErrorMessage, Field, Form } from 'vee-validate';
