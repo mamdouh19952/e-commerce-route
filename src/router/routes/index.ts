@@ -15,8 +15,9 @@ import BrandDetails from '@/pages/Brands/brandDetails.vue';
 import CatagoryDetails from '@/pages/Catagory/CatagoryDetails.vue';
 import Wishlist from '@/pages/wishlist/wishlist.vue';
 import ForgetPassward from '@/pages/ForgetPassward/ForgetPassward.vue';
+import type { RouteRecordRaw } from 'vue-router';
  
- export const routes = [
+ export const routes: RouteRecordRaw[] = [
 {    
     path:'/',
     component : MainLayout,

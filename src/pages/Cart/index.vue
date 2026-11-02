@@ -27,7 +27,7 @@
       <div
       
         v-for="item in cartStore?.cartData?.products"
-        :key="item.id"
+        :key="item._id"
         class="grid grid-cols-1 lg:grid-cols-2 min-[550px]:gap-6 border-t border-gray-200 py-6 relative"
       >
       <button @click="cartStore.delteCartItem(item.product.id)" class="rounded-full group  flex items-center justify-center focus-within:outline-red-500 absolute p-5 cursor-pointer top-2 right-2">
