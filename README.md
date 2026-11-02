@@ -2,7 +2,7 @@
 
 A responsive online store built with **Vue 3, TypeScript, Pinia and Tailwind CSS**. It covers the full shopping flow: authentication, product browsing, cart, wishlist, checkout and order history.
 
-**Live demo:** VERCEL_LINK_HERE
+**Live demo:** https://e-commerce-route-8jma.vercel.app
 
 > The app talks to the public Route Academy e-commerce API (`ecommerce.routemisr.com`), so there is no backend in this repo.
 > Every page except sign-in / sign-up requires login. On the live demo, create an account with any email, then sign in.
