@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/vue-project/', // استبدل vue-project باسم الـ Repository على GitHub
+  base: '/', // served from the domain root on Vercel
   plugins: [
     vue(),
     vueDevTools(),
