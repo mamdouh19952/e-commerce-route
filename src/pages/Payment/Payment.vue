@@ -1,7 +1,7 @@
 <template>
   <Navbar />
 
-  <div class="m-20 w-3/4 mx-auto text-gray-700">
+  <div class="mt-20 w-3/4 mx-auto text-gray-700">
     <Form @submit="getValues" :validation-schema="paymentSchema">
       <h2 class="text-3xl py-4">Pay Now :</h2>
       

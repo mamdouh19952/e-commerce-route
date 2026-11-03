@@ -1,6 +1,6 @@
 <template>
-    <footer class="bg-gray-100 w-full   dark:bg-gray-800 dark:text-gray-200 ">
-  <div class="container mx-auto py-4">
+    <footer class=" md:px-3 px-12 w-full text-center   dark:bg-gray-800 dark:text-gray-200 ">
+  <div class="container mx-auto py-4 ">
     <div class="text-gray-700 text-lg font-semibold mb-2 text-left">
       <p class="text-gray-600 mb-2 text-2xl">Get The FreshCart App</p>
       <p class="text-gray-500">
@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  <hr class="my-4 border-gray-300  w-[90%] shadow-xl shadow-gray-500 mx-auto " />
+  <hr class="my-4 border-gray-300  w-[100%] shadow-xl shadow-gray-500 mx-auto " />
   <div class="payment flex flex-col md:flex-row  justify-between items-center  gap-4 mx-auto   container py-4">
     <div class="partner flex  items-center gap-4">
       <p>Payment Partners</p>
@@ -38,7 +38,6 @@
       <span class="text-3xl cursor-pointer text-green-600"><i class="fa-brands fa-google-play"></i></span>
     </div>
   </div>
-  <hr class="my-4 border-gray-300  w-[90%] shadow-xl shadow-gray-500 mx-auto " />
 </footer>
 </template>
 

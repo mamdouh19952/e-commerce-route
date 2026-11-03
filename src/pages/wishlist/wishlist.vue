@@ -24,7 +24,7 @@
               class="xl:w-[140px] rounded-xl object-cover"
             />
           </div>
-          <div class="pro-data w-full max-w-sm">
+          <div class="pro-data w-full max-w-sm flex items-center flex-col pt-4 ">
             <h5
               class="font-semibold text-xl leading-8 text-black max-[550px]:text-center"
             >
@@ -38,7 +38,7 @@
             <h6
               class="font-medium text-lg leading-8 text-red-600 max-[550px]:text-center"
             >
-              <button
+              <button 
                 @click="removeFromWishlist(item.id)"
                 class="rounded-full group flex items-center gap-1.5 justify-center focus-within:outline-red-500 cursor-pointer"
               >

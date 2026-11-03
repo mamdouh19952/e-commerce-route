@@ -3,7 +3,7 @@
         <BrandsSlider/>
     <HomeSliderMain />
    <HomeProducts />
-   <Footer class="py-4" />
+   <Footer class="py-4 px-2" />
 
 
    </div>
@@ -18,6 +18,6 @@ import HomeSliderMain from '@/components/Home/HomeSliderMain.vue';
 
 </script>
 
-<style lang="scss" scoped>
+<style  scoped>
 
 </style>

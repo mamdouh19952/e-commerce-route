@@ -1,29 +1,13 @@
 <template>
             <Navbar />
 
-    <div class="m-20 w-3/4 mx-auto text-gray-700">
+    <div class="mt-20 w-3/4 mx-auto text-gray-700">
 <Form @submit="getValues" :validation-schema="userSchema" >
     <h2 class="text-3xl py-4">Register Now :</h2>
 <p v-if="authStore.apiErrors" class=" bg-red-200 text-center p-2 rounded-md mt-4 text-lg font-semibold text-red-600">
 
 
     {{authStore.fieldError}} <span v-if="authStore.fieldError">:</span> {{ authStore.apiErrors }}</p>
-<!-- <div class="mt-4">
-    <label for="email" class="block mb-2 text-sm font-medium text-gray-400 dark:text-white">email :</label>
-        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="your email" 
-        v-model="user.email"
-        name="email" />
-</div> -->
-
-
-    <!-- <div>
-    <label for="name" class="block mb-2 text-sm font-medium text-gray-400 dark:text-white">name :</label>
-        <Field name="name"
-        :rules="requiredName"
-
-        type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="your name" />
-        <ErrorMessage as="div" name="name" class="text-red-500 text-center m-2 bg-red-200 p-2 mt-2" />
-</div> -->
 
     <div v-for="item in fieldsData" :key="item.name">
     <label :for="item.name" class="block mb-2 text-sm font-medium text-gray-400 dark:text-white">
@@ -38,12 +22,10 @@
 
 </Form>    </div>
 
-<Footer />
 
 </template>
 
 <script setup lang="ts">
-import Footer from '@/components/Footer.vue';
 import Navbar from '@/components/Navbar.vue';
 import { useAuthStore } from '@/stores/auth';
 import { ErrorMessage, Field, Form } from 'vee-validate';

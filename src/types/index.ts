@@ -42,25 +42,35 @@ export interface IProduct {
 
 export interface ICartProduct {
   count: number;
+    id: number; // تأكد إنه موجود
+
   _id: string;
   product: {
     subcategory: {
       _id: string;
+        id: number; // تأكد إنه موجود
+
       name: string;
       slug: string;
       category: string;
     }[];
+    
     _id: string;
+    
     title: string;
     quantity: number;
     imageCover: string;
     category: {
+        id: number; // تأكد إنه موجود
+
       _id: string;
       name: string;
       slug: string;
       image: string;
     };
     brand: {
+        id: number; // تأكد إنه موجود
+
       _id: string;
       name: string;
       slug: string;

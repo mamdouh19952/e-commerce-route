@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-12">
     <!-- العنوان -->
     <div v-if="route.path == '/'"  >
 <div class="w-full text-center my-10">
@@ -11,7 +11,7 @@
     </div>
 
     <!-- مربع البحث -->
-    <div class="w-full max-w-2xl px-4 mx-auto py-4">
+    <div class="w-full max-w-2xl px-4 mx-auto py-4 ">
       <input
         v-model="searchQuery"
         type="text"
@@ -21,7 +21,7 @@
     </div>
 
     <!-- المنتجات -->
-    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-6 mt-6">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-6 mt-6 px-12">
       <Product
         v-for="item in filteredProducts"
         :key="item._id"
